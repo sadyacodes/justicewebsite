@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - JusticeGate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function submitContact() {
+      alert("Message sent successfully!");
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f0f4ff;
+    }
+    .nav-bg, .footer-bg, .button-bg, .button-bg:hover {
+      background-color: #0D1321;
+    }
+    .input-bg {
+      border: 2px solid #0D1321;
+    }
+    .contact-box {
+      border: 2px solid black;
+      transition: transform 0.3s ease;
+    }
+    .contact-box:hover {
+      transform: scale(1.05);
+    }
+    .contact-img {
+      max-height: 450px;
+      width: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <nav class="nav-bg text-white py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="text-2xl font-bold">JusticeGate</div>
+      <div class="space-x-4">
+        <a href="home.html" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="appointment.html" class="hover:underline">Appointment</a>
+        <a href="contact.html" class="hover:underline font-semibold">Contact</a>
+        <a href="signup.html" class="hover:underline">Sign Up</a>
+        <a href="index.html" class="hover:underline">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="flex flex-col md:flex-row justify-center items-center mt-12 px-6">
+    <div class="md:w-1/2 p-6 hidden md:block">
+      <img src="https://img.freepik.com/premium-vector/law-firm-legal-services-concept-lawyer-consultant-justice-flat-illustration-vector-banner_128772-1750.jpg" alt="Contact" class="rounded-xl shadow-lg contact-img">
+    </div>
+
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full contact-box">
+      <h2 class="text-2xl font-bold text-center mb-6" style="color:#0D1321;">Get in Touch</h2>
+
+      <input type="text" placeholder="Your Name" class="w-full p-3 input-bg rounded mb-4">
+      <input type="email" placeholder="Your Email" class="w-full p-3 input-bg rounded mb-4">
+      <textarea rows="5" placeholder="Your Message" class="w-full p-3 input-bg rounded mb-4"></textarea>
+
+      <button onclick="submitContact()" class="button-bg w-full py-3 rounded text-white font-bold">
+        Send Message
+      </button>
+    </div>
+  </section>
+
+  <footer class="footer-bg text-white mt-16 py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">&copy; 2025 JusticeGate Law Firm. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

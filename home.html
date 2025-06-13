@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JusticeGate Law Firm</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white shadow-lg fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-wide cursor-pointer">JusticeGate</div>
+      <div class="space-x-6 font-semibold text-sm md:text-base">
+        <a href="#home" class="hover:text-yellow-400">Home</a>
+        <a href="about.html" class="hover:text-yellow-400" id="about-link">About</a>
+        <a href="#services" class="hover:text-yellow-400">Services</a>
+        <a href="#human-rights" class="hover:text-yellow-400">Human Rights</a>
+        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+        <a href="signup.html" class="hover:text-yellow-400">Sign Up</a>
+        <a href="index.html" class="hover:text-yellow-400">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gray-900 text-white pt-24">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-24 flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Your Loyal & Honest Advocate</h1>
+        <p class="text-lg mb-6">Dedicated to justice, integrity, and your peace of mind. Trust JusticeGate for reliable legal representation.</p>
+        <a href="#about" class="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full transition">Learn More</a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/310/601/large_2x/a-lawyer-and-client-in-a-meeting-free-photo.jpg" alt="Lawyer with client" class="w-64 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-16 bg-white rounded-lg shadow-lg my-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Welcome To JusticeGate</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto text-lg">We are committed to providing honest, loyal, and effective legal services. Our experienced team fights for your rights with integrity and dedication.</p>
+    </div>
+    <div class="flex flex-col md:flex-row items-center md:space-x-8">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <img src="https://indialegallive.com/wp-content/uploads/2020/10/indialaw.jpg" alt="Legal services" class="w-full rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300" />
+      </div>
+      <div class="md:w-1/2 text-gray-700 text-lg">
+        <p class="mb-4">JusticeGate is a trusted law firm dedicated to serving clients with honesty and loyalty. Our team of expert advocates specializes in criminal, civil, family, and corporate law. We prioritize your needs and fight tirelessly for justice.</p>
+        <p>With a reputation for professionalism and transparency, JusticeGate is your trusted partner in legal matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Legal Services</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">Providing comprehensive legal support with professionalism and dedication. Trust us to handle your case with care and expertise.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Criminal Law -->
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
+        <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1zrJiBL9ltBkHKHEZ82qLuyf0RDrQ0c0YA63ZucEjHNJcIILLwdsZPlec6mVQNyq7mPRqPICdZYvahnLNAg4faqaTsfM89Xn98XBHx8QRmS9goRa9ik8fFVsrqZXCXA-_TRYmXw?key=5cK9Dz_MLr_5K4I22gYGGQRY" alt="Criminal Law" class="w-full h-48 object-cover rounded mb-4 hover:scale-105 transform transition-transform duration-300"/>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Criminal Law</h3>
+        <p class="text-gray-600 text-sm">Defending your rights in criminal cases, bail, trials, and appeals. Experienced advocates committed to justice.</p>
+      </div>
+      <!-- Family Law -->
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.4&auto=format&fit=crop&w=800&q=80" alt="Family Law" class="w-full h-48 object-cover rounded mb-4 hover:scale-105 transform transition-transform duration-300"/>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Family Law</h3>
+        <p class="text-gray-600 text-sm">Handling divorce, child custody, maintenance, and family disputes with compassion and expertise.</p>
+      </div>
+      <!-- Corporate Law -->
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition duration-300">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAHZukekUO8hPZvi0yhLk30rALADdEVbUpOw&s" alt="Corporate Law" class="w-full h-48 object-cover rounded mb-4 hover:scale-105 transform transition-transform duration-300"/>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Corporate Law</h3>
+        <p class="text-gray-600 text-sm">Business registration, contracts, disputes, and compliance. Your trusted partner in corporate legal matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Human Rights / Legal Aid -->
+  <section id="human-rights" class="max-w-7xl mx-auto px-6 py-16 bg-gray-100 rounded-lg shadow-lg my-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Legal Aid & Human Rights</h2>
+      <p class="text-gray-700 max-w-3xl mx-auto">Dedicated to defending human rights and providing legal aid to those in need. Our team believes in justice for all.</p>
+    </div>
+    <div class="flex justify-center">
+      <img src="https://cms.ezylegal.in/wp-content/uploads/2022/06/legal-aid-human-rights.jpg" alt="Legal Aid Human Rights" class="w-full max-w-3xl rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300"/>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="max-w-4xl mx-auto px-6 py-16 text-center" id="contact">
+    <h3 class="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">Ready to Fight for Your Rights?</h3>
+    <p class="text-gray-600 mb-6">Contact JusticeGate today for a consultation with our trustworthy advocates. Your justice is our mission.</p>
+    <a href="contact.html" class="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold py-3 px-8 rounded-full transition">Get in Touch</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-6">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-sm">© 2025 JusticeGate Law Firm. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

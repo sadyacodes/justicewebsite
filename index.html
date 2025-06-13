@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - JusticeGate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function login() {
+      const user = document.getElementById('username').value.trim();
+      const pass = document.getElementById('password').value.trim();
+      if (user && pass) {
+        window.location.href = 'home.html';
+      } else {
+        alert('Please enter both username and password.');
+      }
+    }
+  </script>
+  <style>
+    body { background-color:#f0f4ff; }
+    .nav-bg, .footer-bg, .button-bg, .button-bg:hover { background-color:#0D1321; }
+    .input-border { border:2px solid #0D1321; }
+    .fade-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out;}
+    .fade-in.visible{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body class="text-gray-800">
+  <!-- Navbar -->
+  <nav class="nav-bg text-white py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <span class="text-2xl font-bold">JusticeGate</span>
+      <div class="space-x-4 text-sm">
+        <span class="opacity-50 cursor-not-allowed">Home</span>
+        <span class="opacity-50 cursor-not-allowed">About</span>
+        <span class="opacity-50 cursor-not-allowed">Appointment</span>
+        <span class="opacity-50 cursor-not-allowed">Contact</span>
+        <a href="signup.html" class="underline hover:text-gray-300">Sign Up</a>
+        <a href="index.html"  class="underline hover:text-gray-300">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-white shadow-lg py-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl font-bold" style="color:#0D1321;">Welcome to JusticeGate</h1>
+      <p class="text-gray-600 mt-4">Your Trusted Legal Partner</p>
+    </div>
+  </header>
+
+  <!-- Login Box -->
+  <section class="max-w-xl mx-auto mt-20 px-6">
+    <div id="login-box" class="bg-white shadow-xl rounded-xl p-8 fade-in">
+      <img src="https://i.pinimg.com/1200x/22/8b/05/228b05cfbd5a027215e90710170d66e3.jpg" alt="Law Login" class="rounded-lg h-48 w-full object-cover mb-6" />
+      <h2 class="text-2xl font-bold text-center mb-6" style="color:#0D1321;">Login</h2>
+      <input id="username" type="text" placeholder="Username" class="w-full p-3 rounded mb-4 input-border" />
+      <input id="password" type="password" placeholder="Password" class="w-full p-3 rounded mb-4 input-border" />
+      <button onclick="login()" class="button-bg w-full py-3 rounded text-white font-bold">Login</button>
+      <p class="text-center mt-4">Don't have an account? <a href="signup.html" class="underline" style="color:#0D1321;">Sign up</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bg text-white mt-16 py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">© 2025 JusticeGate Law Firm. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+      new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('visible'))).observe(document.getElementById('login-box'));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment - JusticeGate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function bookAppointment() {
+      alert("Appointment booked successfully!");
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f0f4ff;
+    }
+    .nav-bg, .footer-bg, .button-bg, .button-bg:hover {
+      background-color: #0D1321;
+    }
+    .input-bg {
+      border: 2px solid #0D1321;
+    }
+    .signup-box {
+      border: 2px solid black;
+      transition: transform 0.3s ease;
+    }
+    .signup-box:hover {
+      transform: scale(1.05);
+    }
+    .appointment-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+  <nav class="nav-bg text-white py-4 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <a href="home.html" class="text-2xl font-bold hover:underline">JusticeGate</a>
+      <div class="space-x-4">
+        <a href="home.html" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="appointment.html" class="hover:underline font-semibold">Appointment</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="signup.html" class="hover:underline">Sign Up</a>
+        <a href="index.html" class="hover:underline">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="flex flex-col md:flex-row justify-center items-center mt-12 px-6">
+    <div class="p-6 hidden md:block md:w-1/2">
+      <a href="https://img.freepik.com/premium-vector/concept-legally-accepting-terms-conditions-law-illustration_1263357-37128.jpg?semt=ais_hybrid&w=740" target="_blank">
+        <img src="https://img.freepik.com/premium-vector/concept-legally-accepting-terms-conditions-law-illustration_1263357-37128.jpg?semt=ais_hybrid&w=740" 
+             alt="Appointment" 
+             class="appointment-img" />
+      </a>
+    </div>
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-md w-full signup-box">
+      <h2 class="text-2xl font-bold text-center mb-6" style="color:#0D1321">Book Appointment</h2>
+      <input type="text" placeholder="Full Name" class="w-full p-3 input-bg rounded mb-4" />
+      <input type="email" placeholder="Email" class="w-full p-3 input-bg rounded mb-4" />
+      <input type="date" class="w-full p-3 input-bg rounded mb-4" />
+      <textarea rows="4" placeholder="Reason for Appointment" class="w-full p-3 input-bg rounded mb-4"></textarea>
+      <button onclick="bookAppointment()" class="button-bg w-full py-3 rounded text-white font-bold">Schedule</button>
+    </div>
+  </section>
+
+  <footer class="footer-bg text-white mt-16 py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">&copy; 2025 JusticeGate Law Firm. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
