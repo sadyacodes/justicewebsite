@@ -14,8 +14,6 @@
 2. Open the `index.html` file in your browser.
 3. Explore pages like Home, About, Services, Contact, and more.
 
-## 🖼️ Screenshots
-*(Add screenshots later if available)*
 
 ## 🔧 Technologies Used
 - HTML5
